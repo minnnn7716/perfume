@@ -1,0 +1,55 @@
+.card{
+  transition: all ease 0.3s;
+  @include mobile(){
+  padding-left: 0;
+  padding-right: 0;
+  }
+}
+
+.card--hover:hover{
+  transform: scale(1.02);
+}
+
+.card--soldOut{
+  img{
+    filter: brightness(60%);
+  }
+  p{
+    @include positionCenter;
+  }
+}
+
+.card--title{
+  font-size: $fontH3;
+  font-weight: 700;
+  &:hover{
+    color: $linkColor;
+  }
+}
+
+.card--brand{
+  &:hover{
+    color: $linkColor;
+  }
+}
+
+.card__price--origin{
+  color: $secondary;
+  text-decoration: line-through;
+}
+
+.card--link{
+  font-size: $fontH4;
+  padding-top: 3px;
+  padding-right: 11px;
+  &:hover{
+    color: lighten($primary, 10%);
+  }
+}
+
+.card--img{
+  @include mobile(){
+    max-height: 350px;
+    overflow: hidden;
+  }
+}

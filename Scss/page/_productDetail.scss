@@ -1,0 +1,19 @@
+.productDetail__main{
+  padding: 80px 0 30px 0;
+  @include mobile(){
+  padding: 100px 0 10px 0;
+  }
+  img{
+    margin-bottom: 30px;
+  }
+}
+
+.productDetail__main__scaleImage{
+  @include mobile(){
+    max-height: 470px;
+    overflow: hidden;
+    img{
+      width: 250%;
+    }
+  }
+}

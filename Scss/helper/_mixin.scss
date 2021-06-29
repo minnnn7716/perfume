@@ -1,0 +1,30 @@
+@mixin pad {
+  @media(max-width:768px){
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media(max-width:500px){
+    @content;
+  }
+}
+
+@mixin backgroundImage($img){
+  height: calc(100vh - 38px);
+  background: url("../images/#{$img}.jpg") center center;
+  background-size: cover;
+}
+
+@mixin hideText{
+  display: block;
+  text-indent: 101%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@mixin positionCenter{
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

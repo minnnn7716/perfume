@@ -1,0 +1,61 @@
+.mypage{
+  .mypage__main{
+    padding: 80px 0 60px 0;
+    @include pad(){
+      padding-top: 40px;
+    }
+    @include mobile(){
+      padding-top: 80px;
+    }
+  }
+
+  .sideBar--title{
+    margin-bottom: 28px;
+  }
+
+  .sideBar__link{
+    display: inline-block;
+    border-bottom: 2px solid transparent;
+  }
+
+  .sideBar__link--hover:hover,
+  .sideBar__link--active{
+    border-bottom: 2px solid $primary;
+  }
+  
+  .infor--title{
+    border-bottom: 1px solid $gary-300;
+  }
+
+  .infor--spacing{
+    margin-bottom: 20px;
+  }
+
+  .infor__mobile--spacing{
+    padding-right: 15px;
+  }
+
+  .infor--button{
+    margin-left: 15px;
+    padding: 8px 48px;
+  }
+  
+  .baseForm--input__style{
+    margin-left: 15px;
+  }
+
+  .baseForm--news{
+    margin-top: 12px;
+    margin-left: 15px;
+  }
+
+  .baseForm--news__input{
+    margin: 0;
+    transform: scale(1.2);
+    cursor: pointer;
+  }
+
+  .memberNumber--icon{
+    margin-right: 3px;
+  }
+}

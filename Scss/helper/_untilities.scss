@@ -1,0 +1,236 @@
+// display
+.d-block{
+  display: block;
+}
+
+.d-inlineBlock{
+  display: inline-block;
+}
+
+.d-none{
+  display: none;
+}
+
+// RWD display
+@include pad(){
+  .d-p-none{
+    display: none;
+  }
+}
+
+@include mobile(){
+  .d-m-none{
+    display: none;
+  }
+
+  .d-m-block{
+    display: block;
+  }
+} 
+
+// flex
+.d-flex{
+  display: flex;
+}
+
+.d-p-flex{
+  @include pad(){
+    display: flex;
+  }
+}
+
+.d-m-flex{
+  @include mobile(){
+    display: flex;
+  }
+}
+
+.fww{
+ flex-wrap: wrap; 
+}
+
+.fdr{
+  flex-direction: row;
+}
+
+.fdrr{
+  flex-direction: row-reverse;
+}
+
+.fdc{
+  flex-direction: column;
+}
+
+.p-fdc{
+  @include pad(){
+      flex-direction: column;
+  }
+}
+
+.m-fdc{
+  @include mobile(){
+      flex-direction: column;
+  }
+}
+
+.fdcr{
+  flex-direction: column-reverse;
+}
+
+.p-fdcr{
+  @include pad(){
+      flex-direction: column-reverse;
+    }
+}
+
+.m-fdcr{
+  @include mobile(){
+      flex-direction: column-reverse;
+  }
+}
+
+.jcfs{
+  justify-content: flex-start;
+}
+
+.jcc{
+  justify-content: center;
+}
+
+.jcfe{
+  justify-content: flex-end;
+}
+
+.jcsb{
+  justify-content: space-between;
+}
+
+.p-jcsb{
+  @include pad(){
+    justify-content: space-between;
+  }
+}
+
+.m-jcsb{
+  @include mobile(){
+    justify-content: space-between;
+  }
+}
+
+.jcsa{
+  justify-content: space-around;
+}
+
+.aifs{
+  align-items: flex-start;
+}
+
+.aic{
+  align-items: center;
+}
+
+.aife{
+  align-items: flex-end;
+}
+
+.aisb{
+  align-items: space-between;
+}
+
+.aisa{
+  align-items: space-around;
+}
+
+// positin
+.p-re{
+  position: relative;
+}
+
+.p-ab{
+  position: absolute;
+}
+
+// color
+.primary{
+  color: $primary;
+}
+
+.primary--hover:hover{
+  color: lighten($primary, 20%);
+}
+
+.secondary{
+  color: $secondary;
+}
+
+.linkColor{
+  color: $linkColor;
+}
+
+.white{
+  color: $white;
+}
+
+.black{
+  color: $black;
+}
+
+.bg-gary-100{
+  background: $gary-100;
+}
+
+.gary-300{
+  color: $gary-300;
+}
+
+.gary-400{
+  color: $gary-400;
+}
+
+// fontFamily
+.fontFamily{
+  font-family: 'Roboto','Noto Sans TC',sans-serif;
+}
+
+// fontWeight
+.bold{
+  font-weight: 700;
+}
+
+.light{
+  font-weight: 300;
+}
+
+// fontSize
+.fontH1{
+  font-size: $fontH1;
+}
+
+.fontH2{
+  font-size: $fontH2;
+}
+
+.fontH3{
+  font-size: $fontH3;
+}
+
+.fontH4{
+  font-size: $fontH4;
+}
+
+.p-fontH4{
+  font-size: $fontH4;
+}
+
+.fontH6{
+  font-size: $fontH6;
+}
+
+// width
+.w-50{
+  width: 50%;
+}
+
+.w-100{
+  width: 100%;
+}

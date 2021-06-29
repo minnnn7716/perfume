@@ -1,0 +1,29 @@
+.intoCart{
+  padding: 0;
+  input{
+    width: 45%;
+    padding: 16px 0 16px 16px;
+    border-top: 2px solid $primary;
+    border-left: 2px solid $primary;
+    border-bottom: 2px solid $primary;
+    border-right: transparent;
+    border-radius: 4px 0 0 4px;
+  }
+
+  button{
+    width: 55%;
+    border: 2px solid $primary;
+    border-radius: 0 4px 4px 0;
+    background: $primary;
+    color: #FFFFFF;
+    font-weight: 500;
+    transition: all ease 0.3s;
+    &:hover{
+      background: darken($primary, 10%);
+    }
+  }
+}
+
+.intoCart__heart--hover:hover{
+  color: $linkColor;
+}

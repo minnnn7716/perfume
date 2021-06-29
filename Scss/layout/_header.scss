@@ -1,0 +1,24 @@
+.banner{
+  @include backgroundImage(index1);
+  .banner__article{
+    height: calc(100vh - 38px);
+  }
+  @include mobile(){
+    .col-5{
+      padding: 0;
+    }
+  }
+}
+
+.menu{
+  background: $primary;
+  .menu__a--Spacing{
+    display: block;
+    padding: 14px;
+  }
+
+  .menu__a--hover:hover{
+    background: $secondary;
+  }
+}
+

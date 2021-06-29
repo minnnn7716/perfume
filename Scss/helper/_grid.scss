@@ -1,0 +1,42 @@
+$gutterWidth: 30px;
+$gridNum: 12;
+
+%col{
+  position: relative;
+  min-height: 1px;
+  padding-left: $gutterWidth / 2;
+  padding-right: $gutterWidth / 2;
+}
+
+@for $i from 1 to $gridNum+1{
+  .col-#{$i}{
+    @extend %col;
+    max-width: 100% * ($i/$gridNum);
+    flex: 0 0 (100% * ($i/$gridNum));
+  }
+}
+
+@include pad(){
+  @for $i from 1 to $gridNum+1{
+    .col-p-#{$i}{
+      max-width: 100% * ($i/$gridNum);
+      flex: 0 0 (100% * ($i/$gridNum));
+    }
+  }
+}
+
+@include mobile(){
+  @for $i from 1 to $gridNum+1{
+    .col-#{$i}{
+      max-width: 100%;
+      flex: 0 0 100%;
+    }
+  }
+
+  @for $i from 1 to $gridNum+1{
+    .col-m-#{$i}{
+      max-width: 100% * ($i/$gridNum);
+      flex: 0 0 (100% * ($i/$gridNum));
+    }
+  }
+}

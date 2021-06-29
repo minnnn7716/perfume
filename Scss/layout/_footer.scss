@@ -1,0 +1,31 @@
+.footer--sub{
+  @include backgroundImage(index10);
+  height: 520px;
+  @include mobile(){
+  background-position: bottom left;
+  background-size: 160%;
+  }
+  .container{
+    height: 100%;
+  }
+  .subscribe{
+    margin-bottom: 112px;
+  }
+}
+
+.footer--list{
+  background: $primary;
+  padding: 20px 0;
+  a:hover{
+    transform: scale(1.05);
+    color: darken($white, 20%)
+  }
+  .footer--list--link a{
+    padding:  0 18px;
+  }
+  @include mobile(){
+  .container{
+    justify-content: center;
+  }
+  }
+}

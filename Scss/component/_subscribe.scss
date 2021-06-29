@@ -1,0 +1,33 @@
+.subscribe{
+  padding: 0;
+  label{
+    font-weight: 700;
+    color: $secondary;
+    margin-bottom: 20px;
+  }
+
+  input{
+    width: 65%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 2px solid $primary;
+    border-left: 2px solid $primary;
+    border-bottom: 2px solid $primary;
+    border-right: transparent;
+    border-radius: 4px 0 0 4px;
+  }
+
+  button{
+    width: 35%;
+    padding: 20px 26px;
+    border: 2px solid $primary;
+    border-radius: 0 4px 4px 0;
+    background: $primary;
+    color: #FFFFFF;
+    font-weight: 500;
+    transition: all ease 0.3s;
+    &:hover{
+      background: darken($primary, 10%);
+    }
+  }
+}

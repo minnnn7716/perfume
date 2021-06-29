@@ -1,0 +1,15 @@
+.login--image{
+  @include mobile(){
+    max-height: 250px;
+    overflow: hidden;
+  }
+}
+
+.login{
+  .baseForm--label__style{
+    margin-bottom: 4px;
+  }
+  .baseForm--input__style{
+    margin-bottom: 20px;
+  }
+}
